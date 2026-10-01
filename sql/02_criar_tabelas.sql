@@ -36,5 +36,6 @@ CREATE TABLE vendas (
     custo_mercadoria NUMERIC(12,2) CHECK (custo_mercadoria >= 0),
     margem_percentual NUMERIC(10,2),
     receita_bruta NUMERIC(12,2) CHECK (receita_bruta >= 0),
-    avaliacao NUMERIC(4,2) CHECK (avaliacao >= 0 AND avaliacao <= 10)
+    avaliacao NUMERIC(4,2) CHECK (avaliacao >= 0 AND avaliacao <= 10),
+    dia_semana VARCHAR(20)
 );
